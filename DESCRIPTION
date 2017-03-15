@@ -1,13 +1,13 @@
 Package: prenoms
 Type: Package
-Title: First names in France between 1900 and 2015
+Title: French Baby Names 1900-2015
 Version: 0.0.9000
 Authors@R: c(
     person("Romain", "Francois", email = "romain@thinkr.fr", role = c("aut", "cre") ),
     person("Florian", "Gaudin-Delrieu", email = "florian.gaudindelrieu@gmail.com", role = "aut"),
     person("ThinkR", role = "cph")
     )
-Description: First names given in metropolitan France between 1900 and 2015.
+Description: French Baby Names 1900-2015. 
 License: MIT
 Encoding: UTF-8
 LazyData: true

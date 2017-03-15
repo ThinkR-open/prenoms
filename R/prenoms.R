@@ -1,4 +1,4 @@
-#' First name in metropolitan France between 1900 and 2015
+#' French Baby Names 1900-2015
 #'
 #' First name in metropolitan France between 1900 and 2015, detailed by department
 #'
@@ -14,7 +14,7 @@
 #' @source INSEE \url{http://www.data.gouv.fr/fr/datasets/fichier-des-prenoms-edition-2016/}
 "prenoms_detailed"
 
-#' First name in metropolitan France between 1900 and 2015
+#' French Baby Names 1900-2015
 #'
 #' First name in metropolitan France between 1900 and 2015.
 #'

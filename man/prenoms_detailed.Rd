@@ -3,7 +3,7 @@
 \docType{data}
 \name{prenoms_detailed}
 \alias{prenoms_detailed}
-\title{First name in metropolitan France between 1900 and 2015}
+\title{French Baby Names 1900-2015}
 \format{data frame with columns
 \itemize{
   \item{year}{integer, between 1900 and 2015}
