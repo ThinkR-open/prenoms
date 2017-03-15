@@ -4,7 +4,7 @@ Title: First names in France between 1900 and 2015
 Version: 0.0.9000
 Authors@R: c(
     person("Romain", "Francois", email = "romain@thinkr.fr", role = c("aut", "cre") ),
-    person("Florian", "Gaudin-Delrieu", role = "aut"),
+    person("Florian", "Gaudin-Delrieu", email = "florian.gaudindelrieu@gmail.com", role = "aut"),
     person("ThinkR", role = "cph")
     )
 Description: First names given in metropolitan France between 1900 and 2015.
