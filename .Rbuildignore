@@ -1,4 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 data-raw
+romain.png
+README.md
 
