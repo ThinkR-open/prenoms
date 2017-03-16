@@ -3,23 +3,35 @@
 \docType{data}
 \name{prenoms}
 \alias{prenoms}
+\alias{prenoms_detailed}
 \title{French Baby Names 1900-2015}
 \format{data frame with columns
 \itemize{
-  \item{year}{integer, between 1900 and 2015}
-  \item{sex}{character, either M or F}
-  \item{name}{character, first name}
-  \item{n}{integer, birth count that year}
-  \item{prop}{numeric, proportion in that year}
+  \item{\code{year}: integer, between 1900 and 2015}
+  \item{\code{sex}: character, either M or F}
+  \item{\code{name}: character, first name}
+  \item{\code{n}: integer, birth count within the department for the \code{prenoms_detailed} dataset, or globally for the \code{prenoms} dataset}
+  \item{\code{dpt}: character, department}
+  \item{\code{prop}: numeric, proportion in that year in that department or globally }
 }}
 \source{
-INSEE \url{http://www.data.gouv.fr/fr/datasets/fichier-des-prenoms-edition-2016/}
+INSEE \url{https://www.insee.fr/fr/statistiques/2540004}
 }
 \usage{
+prenoms_detailed
+
 prenoms
 }
 \description{
-First name in metropolitan France between 1900 and 2015.
+First name in metropolitan France between 1900 and 2015, detailed by department
+}
+\details{
+Data has been modified to take into account changes in France departments, see
+\url{https://www.insee.fr/fr/statistiques/2540004#documentation} for details.
+}
+\examples{
+library("tibble")
+prenoms
 }
 \keyword{datasets}
 
