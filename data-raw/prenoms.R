@@ -55,7 +55,7 @@ rewrite_history_corse <- function(data){
     filter(n != 0)
 }
 
-prenoms_detailed <- read_tsv( system.file( "data-raw", "dpt2015.txt", package = "prenoms" ) ,
+prenoms_detailed <- read_tsv( file.path( "data-raw", "dpt2015.txt" ) ,
     locale = locale(encoding = "iso-8859-1"),
     na = c("XX", "XXXX"),
     col_types = "icicd",
@@ -64,7 +64,7 @@ prenoms_detailed <- read_tsv( system.file( "data-raw", "dpt2015.txt", package = 
   filter( !is.na(annais), !is.na(dpt), dpt != "97", preusuel != "_PRENOMS_RARES" ) %>%
   rename( n = nombre, sex = sexe, year = annais, name = preusuel ) %>%
   mutate(
-    name = str_to_lower(name),
+    name = str_to_title(name),
     n = as.integer(n),
     sex = if_else( sex == 1, "M", "F")
   ) %>%
