@@ -7,16 +7,18 @@ install_github( "ThinkRstat/prenoms" )
 library("prenoms")
 ```
 
-For example, here is the evolution of the first name "romain"
+For example, names from current [ThinkR](http://thinkr.fr) staff 
+[Diane](https://github.com/DianeBeldame), [Romain](https://github.com/romainfrancois) &
+[Vincent](https://github.com/VincentGuyader) through time. 
 
 ```
 library("ggplot2")
 library("dplyr")
 thinkrs <- prenoms %>%
   filter( 
-    name == "Diane"   & sex == "F" |
-    name == "Romain"  & sex == "M" |
-    name == "Vincent" & sex == "M"
+    name == "Diane"   & sex == "F" |  
+    name == "Romain"  & sex == "M" | 
+    name == "Vincent" & sex == "M"   
   ) %>% 
   group_by(name, year, sex) %>%
   summarise( n = sum(n) ) %>%
