@@ -1,7 +1,7 @@
 Package: prenoms
 Type: Package
 Title: French Baby Names 1900-2015
-Version: 0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person("Romain", "Francois", email = "romain@thinkr.fr", role = c("aut", "cre") ),
     person("Florian", "Gaudin-Delrieu", email = "florian.gaudindelrieu@gmail.com", role = "aut"),
