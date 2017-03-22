@@ -55,13 +55,13 @@ rewrite_history_corse <- function(data){
     filter(n != 0)
 }
 
-prenoms_detailed <- read_tsv( file.path( "data-raw", "dpt2015.txt" ) ,
+prenoms <- read_tsv( file.path( "data-raw", "dpt2015.txt" ) ,
     locale = locale(encoding = "iso-8859-1"),
     na = c("XX", "XXXX"),
     col_types = "icicd",
     progress = FALSE
   ) %>%
-  filter( !is.na(annais), !is.na(dpt), dpt != "97", preusuel != "_PRENOMS_RARES" ) %>%
+  filter( !is.na(annais), !is.na(dpt), preusuel != "_PRENOMS_RARES" ) %>%
   rename( n = nombre, sex = sexe, year = annais, name = preusuel ) %>%
   mutate(
     name = str_to_title(name),
@@ -74,28 +74,12 @@ prenoms_detailed <- read_tsv( file.path( "data-raw", "dpt2015.txt" ) ,
   rewrite_history_corse() %>%
   mutate( n = as.integer(n) )
 
-prop_dpt <- prenoms_detailed %>%
+prop_dpt <- prenoms %>%
   group_by(year, dpt ) %>%
   summarise( total = sum(n) )
 
-prenoms_detailed <- left_join( prenoms_detailed, prop_dpt, by = c("year", "dpt") ) %>%
+prenoms <- left_join( prenoms, prop_dpt, by = c("year", "dpt") ) %>%
   mutate( prop = n / total ) %>%
   select(-total)
 
-save( prenoms_detailed, file = "data/prenoms_detailed.rda")
-
-
-# summarise (squash dpt)
-total_year <- prenoms_detailed %>%
-  group_by(year) %>%
-  summarise( total = sum(n) )
-
-prenoms <- prenoms_detailed %>%
-  group_by( year, sex, name ) %>%
-  summarise( n = sum(n) ) %>%
-  ungroup() %>%
-  left_join(total_year, by = c("year") ) %>%
-  mutate( prop = n / total) %>%
-  select(-total)
-
-save( prenoms, file = "data/prenoms.rda")
+save( prenoms, file = "data/prenoms.rda", ascii = FALSE, compress = "xz", compression_level = 9)
