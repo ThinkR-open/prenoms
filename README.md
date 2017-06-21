@@ -3,11 +3,11 @@
 First names given to babies in metropolitan France between 1900 and 2015. 
 
 ```
-install_github( "ThinkRstat/prenoms" )
+devtools::install_github( "ThinkRstat/prenoms" )
 library("prenoms")
 ```
 
-For example, names from current [ThinkR](http://thinkr.fr) staff 
+For example, names from current [ThinkR](http://thinkr.fr) staff [Colin](https://github.com/colinfay),
 [Diane](https://github.com/DianeBeldame), [Romain](https://github.com/romainfrancois) &
 [Vincent](https://github.com/VincentGuyader) through time. 
 
@@ -15,7 +15,8 @@ For example, names from current [ThinkR](http://thinkr.fr) staff
 library("ggplot2")
 library("dplyr")
 thinkrs <- prenoms %>%
-  filter( 
+  filter(
+    name == "Colin"   & sex == "M" |
     name == "Diane"   & sex == "F" |  
     name == "Romain"  & sex == "M" | 
     name == "Vincent" & sex == "M"   
