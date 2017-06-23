@@ -42,3 +42,8 @@
 #'
 #' @name prenoms
 "prenoms"
+
+#' Departements
+#'
+#' @source https://www.data.gouv.fr/fr/datasets/contours-des-departements-francais-issus-d-openstreetmap/
+"departements"
