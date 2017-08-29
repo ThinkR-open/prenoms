@@ -3,7 +3,7 @@
 First names given to babies in metropolitan France between 1900 and 2015. 
 
 ```
-devtools::install_github( "ThinkRstat/prenoms" )
+devtools::install_github( "ThinkR-open/prenoms" )
 library("prenoms")
 ```
 
