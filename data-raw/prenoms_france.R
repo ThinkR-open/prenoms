@@ -4,7 +4,7 @@ library("stringr")
 library("tidyr")
 
 prenoms_france <- read_tsv( file.path( "data-raw", "nat2017.txt" ) ,
-    locale = locale(encoding = "iso-8859-1"),
+    # locale = locale(encoding = "iso-8859-1"),
     na = c("XX", "XXXX"),
     # col_types = "icicd",
     progress = FALSE
@@ -17,7 +17,10 @@ prenoms_france <- read_tsv( file.path( "data-raw", "nat2017.txt" ) ,
     sex = if_else( sex == 1, "M", "F")
   ) %>%
   select( year, sex, name, n ) %>%
-  mutate( n = as.integer(n) )
+  mutate( n = as.integer(n) ) %>%
+  group_by(year,sex) %>%
+  mutate(prop = n /sum(n)) %>%
+  ungroup()
 
 
 save( prenoms_france, file = "data/prenoms_france.rda", ascii = FALSE, compress = "xz", compression_level = 9)

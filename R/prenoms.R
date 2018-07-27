@@ -27,7 +27,7 @@
 #'   thinkrs <- prenoms %>%
 #'     filter(
 #'         name == "Diane"   & sex == "F" |
-#'         name == "Sebastien"  & sex == "M" |
+#'         name == "Sébastien"  & sex == "M" |
 #'         name == "Colin"  & sex == "M" |
 #'         name == "Cervan"  & sex == "M" |
 #'         name == "Vincent" & sex == "M"
@@ -79,7 +79,7 @@
 #'   thinkrs <- prenoms_france %>%
 #'     filter(
 #'         name == "Diane"   & sex == "F" |
-#'         name == "Sebastien"  & sex == "M" |
+#'         name == "Sébastien"  & sex == "M" |
 #'         name == "Colin"  & sex == "M" |
 #'         name == "Cervan"  & sex == "M" |
 #'         name == "Vincent" & sex == "M"

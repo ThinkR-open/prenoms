@@ -4,3 +4,4 @@ data-raw
 thinkr.png
 README.md
 
+^README\.Rmd$

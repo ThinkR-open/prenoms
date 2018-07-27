@@ -1,33 +1,35 @@
-# prenoms
 
-First names given to babies in metropolitan France between 1900 and 2015. 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+prenoms
+=======
 
-```
-devtools::install_github( "ThinkR-open/prenoms" )
-library("prenoms")
-```
+First names given to babies in metropolitan France between 1900 and 2015.
 
-For example, names from current [ThinkR](http://thinkr.fr) staff [Colin](https://github.com/colinfay),
-[Diane](https://github.com/DianeBeldame), [Romain](https://github.com/romainfrancois) &
-[Vincent](https://github.com/VincentGuyader) through time. 
+    devtools::install_github( "ThinkR-open/prenoms" )
+    library("prenoms")
 
-```
+For example, names from current [ThinkR](https://thinkr.fr) staff [Colin](https://github.com/colinfay), [Diane](https://github.com/DianeBeldame), [Sébastien](https://github.com/statnmap), Cervan & [Vincent](https://github.com/VincentGuyader) through time.
+
+``` r
 library("ggplot2")
 library("dplyr")
-thinkrs <- prenoms %>%
-  filter(
-    name == "Colin"   & sex == "M" |
-    name == "Diane"   & sex == "F" |  
-    name == "Romain"  & sex == "M" | 
-    name == "Vincent" & sex == "M"   
-  ) %>% 
-  group_by(name, year, sex) %>%
-  summarise( n = sum(n) ) %>%
-  arrange( year )
+library(prenoms)
+data(prenoms)
+   thinkrs <- prenoms %>%
+     filter(
+         name == "Diane"   & sex == "F" |
+         name == "Sébastien"  & sex == "M" |
+         name == "Colin"  & sex == "M" |
+         name == "Cervan"  & sex == "M" |
+         name == "Vincent" & sex == "M"
+     ) %>%
+     group_by(name, year, sex) %>%
+     summarise( n = sum(n) ) %>%
+     arrange( year )
 
 ggplot( thinkrs, aes(x = year, y = n, color = name) ) + 
   geom_line() + 
   scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
 ```
 
-![](thinkr.png)
+<img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
