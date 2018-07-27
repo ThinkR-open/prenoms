@@ -3,7 +3,7 @@
 prenoms
 =======
 
-First names given to babies in metropolitan France between 1900 and 2015.
+First names given to babies in metropolitan France between 1900 and 2017.
 
     devtools::install_github( "ThinkR-open/prenoms" )
     library("prenoms")
