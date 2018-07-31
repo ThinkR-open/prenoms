@@ -20,7 +20,8 @@ prenoms_france <- read_tsv( file.path( "data-raw", "nat2017.txt" ) ,
   mutate( n = as.integer(n) ) %>%
   group_by(year,sex) %>%
   mutate(prop = n /sum(n)) %>%
-  ungroup()
+  ungroup() %>%
+  arrange(year,sex,name)
 
 
 save( prenoms_france, file = "data/prenoms_france.rda", ascii = FALSE, compress = "xz", compression_level = 9)
