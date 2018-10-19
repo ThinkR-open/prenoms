@@ -1,18 +1,28 @@
-Package: prenoms
 Type: Package
+Package: prenoms
 Title: French Baby Names 1900-2017
 Version: 0.2.0
-Authors@R: c(
-    person("Romain", "Francois", email = "romain@thinkr.fr", role = c("aut", "cre") ),
-    person("Florian", "Gaudin-Delrieu", email = "florian.gaudindelrieu@gmail.com", role = "aut"),
-    person("Vincent", "Guyader", email = "vincent@thinkr.fr", role = "aut"),
-    person("ThinkR", role = "cph")
-    )
-Description: French Baby Names 1900-2017. 
+Authors@R: 
+    c(person(given = "Romain",
+             family = "Francois",
+             role = c("aut", "cre"),
+             email = "romain@thinkr.fr"),
+      person(given = "Florian",
+             family = "Gaudin-Delrieu",
+             role = "aut",
+             email = "florian.gaudindelrieu@gmail.com"),
+      person(given = "Vincent",
+             family = "Guyader",
+             role = "aut",
+             email = "vincent@thinkr.fr"),
+      person(given = "ThinkR",
+             role = "cph"))
+Description: French Baby Names 1900-2017.
 License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    tibble
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1.9000
-Depends: R (>= 2.10)
-Suggests: tibble
-
