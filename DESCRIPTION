@@ -2,8 +2,7 @@ Type: Package
 Package: prenoms
 Title: French Baby Names 1900-2017
 Version: 0.2.0
-Authors@R: 
-    c(person(given = "Romain",
+Authors@R: c(person(given = "Romain",
              family = "Francois",
              role = c("aut", "cre"),
              email = "romain@thinkr.fr"),
