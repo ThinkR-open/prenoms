@@ -2,20 +2,10 @@ Type: Package
 Package: prenoms
 Title: French Baby Names 1900-2017
 Version: 0.2.0
-Authors@R: c(person(given = "Romain",
-             family = "Francois",
-             role = c("aut", "cre"),
-             email = "romain@thinkr.fr"),
-      person(given = "Florian",
-             family = "Gaudin-Delrieu",
-             role = "aut",
-             email = "florian.gaudindelrieu@gmail.com"),
-      person(given = "Vincent",
-             family = "Guyader",
-             role = "aut",
-             email = "vincent@thinkr.fr"),
-      person(given = "ThinkR",
-             role = "cph"))
+Authors@R: c(person(given = "Romain",family = "Francois",role = c("aut", "cre"),email = "romain@thinkr.fr"),
+      person(given = "Florian",family = "Gaudin-Delrieu",role = "aut",email = "florian.gaudindelrieu@gmail.com"),
+      person(given = "Vincent",family = "Guyader",role = "aut",email = "vincent@thinkr.fr",comment = structure("0000-0003-0671-9270", .Names = "ORCID")),
+      person(given = "ThinkR",role = "cph"))
 Description: French Baby Names 1900-2017.
 License: MIT + file LICENSE
 Depends: 
