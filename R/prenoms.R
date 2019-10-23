@@ -1,10 +1,10 @@
-#' French Baby Names 1900-2017
+#' French Baby Names 1900-2018
 #'
-#' French baby names between 1900 and 2017, detailed by department
+#' French baby names between 1900 and 2018, detailed by department
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2017}
+#'   \item{\code{year}: integer, between 1900 and 2018}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}
@@ -51,13 +51,13 @@
 "departements"
 
 
-#' French Baby Names 1900-2017
+#' French Baby Names 1900-2018
 #'
-#' French baby names between 1900 and 2017, at national level
+#' French baby names between 1900 and 2018, at national level
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2017}
+#'   \item{\code{year}: integer, between 1900 and 2018}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}

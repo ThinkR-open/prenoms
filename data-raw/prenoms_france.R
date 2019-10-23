@@ -3,7 +3,7 @@ library("dplyr")
 library("stringr")
 library("tidyr")
 
-prenoms_france <- read_tsv( file.path( "data-raw", "nat2017.txt" ) ,
+prenoms_france <- read_csv2( file.path( "data-raw", "nat2018.csv" ) ,
     # locale = locale(encoding = "iso-8859-1"),
     na = c("XX", "XXXX"),
     # col_types = "icicd",

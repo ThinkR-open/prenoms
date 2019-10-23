@@ -1,14 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-prenoms
-=======
 
-First names given to babies in metropolitan France between 1900 and 2017.
+# prenoms
+
+First names given to babies in metropolitan France between 1900 and
+2018.
 
     devtools::install_github( "ThinkR-open/prenoms" )
     library("prenoms")
 
-For example, names from current [ThinkR](https://thinkr.fr) staff [Colin](https://github.com/colinfay), [Diane](https://github.com/DianeBeldame), [Sébastien](https://github.com/statnmap), Cervan & [Vincent](https://github.com/VincentGuyader) through time.
+For example, names from current [ThinkR](https://thinkr.fr) staff
+[Colin](https://github.com/colinfay),
+[Diane](https://github.com/DianeBeldame),
+[Sébastien](https://github.com/statnmap), Cervan &
+[Vincent](https://github.com/VincentGuyader) through time.
 
 ``` r
 library("ggplot2")
