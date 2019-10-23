@@ -6,7 +6,7 @@ Authors@R: c(person(given = "Romain",family = "Francois",role = c("aut", "cre"),
       person(given = "Florian",family = "Gaudin-Delrieu",role = "aut",email = "florian.gaudindelrieu@gmail.com"),
       person(given = "Vincent",family = "Guyader",role = "aut",email = "vincent@thinkr.fr",comment = c(ORCID = "0000-0003-0671-9270")),
       person(given = "ThinkR",role = "cph"))
-Description: French Baby Names 1900-2017.
+Description: French Baby Names 1900-2018.
 License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
@@ -14,4 +14,4 @@ Suggests:
     tibble
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.1
