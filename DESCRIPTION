@@ -1,6 +1,6 @@
 Type: Package
 Package: prenoms
-Title: French Baby Names 1900-2017
+Title: French Baby Names 1900-2018
 Version: 0.3.0
 Authors@R: c(person(given = "Romain",family = "Francois",role = c("aut", "cre"),email = "romain@purrple.cat", comment = c(ORCID = "0000-0002-2444-4226")),
       person(given = "Florian",family = "Gaudin-Delrieu",role = "aut",email = "florian.gaudindelrieu@gmail.com"),
