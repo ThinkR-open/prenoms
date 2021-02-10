@@ -1,10 +1,10 @@
-#' French Baby Names 1900-2018
+#' French Baby Names 1900-2019
 #'
-#' French baby names between 1900 and 2018, detailed by department
+#' French baby names between 1900 and 2019, detailed by department
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2018}
+#'   \item{\code{year}: integer, between 1900 and 2019}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}
@@ -42,7 +42,6 @@
 #'     scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
 #' }
 #'
-#' @name prenoms
 "prenoms"
 
 #' Departements
@@ -51,13 +50,13 @@
 "departements"
 
 
-#' French Baby Names 1900-2018
+#' French Baby Names 1900-2019
 #'
-#' French baby names between 1900 and 2018, at national level
+#' French baby names between 1900 and 2019, at national level
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2018}
+#'   \item{\code{year}: integer, between 1900 and 2019}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}

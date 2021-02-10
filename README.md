@@ -4,7 +4,7 @@
 # prenoms
 
 First names given to babies in metropolitan France between 1900 and
-2018.
+2019.
 
     devtools::install_github( "ThinkR-open/prenoms" )
     library("prenoms")
@@ -12,7 +12,8 @@ First names given to babies in metropolitan France between 1900 and
 For example, names from current [ThinkR](https://thinkr.fr) staff
 [Colin](https://github.com/colinfay),
 [Diane](https://github.com/DianeBeldame),
-[Sébastien](https://github.com/statnmap), Cervan &
+[Sébastien](https://github.com/statnmap),
+[Cervan](https://github.com/Cervangirard) &
 [Vincent](https://github.com/VincentGuyader) through time.
 
 ``` r
@@ -26,6 +27,7 @@ data(prenoms)
          name == "Sébastien"  & sex == "M" |
          name == "Colin"  & sex == "M" |
          name == "Cervan"  & sex == "M" |
+         name == "Margot"  & sex == "F" |
          name == "Vincent" & sex == "M"
      ) %>%
      group_by(name, year, sex) %>%
