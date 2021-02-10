@@ -19,6 +19,7 @@ For example, names from current [ThinkR](https://thinkr.fr) staff
 ``` r
 library("ggplot2")
 library("dplyr")
+library("tidyr")
 library(prenoms)
 data(prenoms)
    thinkrs <- prenoms %>%
@@ -30,13 +31,27 @@ data(prenoms)
          name == "Margot"  & sex == "F" |
          name == "Vincent" & sex == "M"
      ) %>%
+     complete(name = c("Diane","Sébastien","Colin","Cervan","Margot","Vincent"),year=1900:2019,fill = list(n=0,prop=0)) %>% 
      group_by(name, year, sex) %>%
      summarise( n = sum(n) ) %>%
-     arrange( year )
+     arrange( year ) %>% 
+     mutate(
+       sex = case_when(
+         is.na(sex) & name == "Cervan" ~ "M",
+         is.na(sex) & name == "Colin" ~ "M",
+         is.na(sex) & name == "Diane" ~ "F",
+         is.na(sex) & name == "Margot" ~ "F",
+         is.na(sex) & name == "Sébastien" ~ "M",
+         is.na(sex) & name == "Vincent" ~ "M",
+         TRUE ~ sex
+         
+       )
+       
+     )
 
 ggplot( thinkrs, aes(x = year, y = n, color = name) ) + 
   geom_line() + 
-  scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
+  scale_x_continuous( breaks = seq(1900, 2020, by = 10) )+theme_bw()
 ```
 
 <img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
