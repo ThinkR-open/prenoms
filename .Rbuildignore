@@ -5,3 +5,4 @@ thinkr.png
 README.md
 
 ^README\.Rmd$
+^\.github$

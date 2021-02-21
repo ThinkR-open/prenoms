@@ -1,5 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
+<!-- badges: end -->
 
 # prenoms
 

@@ -12,6 +12,11 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
+<!-- badges: end -->
+
+
 # prenoms
 
 First names given to babies in metropolitan France between 1900 and 2019. 
