@@ -1,17 +1,19 @@
 Type: Package
 Package: prenoms
-Title: French Baby Names 1900-2018
+Title: French Baby Names 1900-2019
 Version: 0.3.0
 Authors@R: c(person(given = "Romain",family = "Francois",role = c("aut", "cre"),email = "romain@purrple.cat", comment = c(ORCID = "0000-0002-2444-4226")),
       person(given = "Florian",family = "Gaudin-Delrieu",role = "aut",email = "florian.gaudindelrieu@gmail.com"),
       person(given = "Vincent",family = "Guyader",role = "aut",email = "vincent@thinkr.fr",comment = c(ORCID = "0000-0003-0671-9270")),
       person(given = "ThinkR",role = "cph"))
-Description: French Baby Names 1900-2018.
+Description: French Baby Names 1900-2019.
 License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
 Suggests: 
-    tibble
+    tibble,
+    testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Config/testthat/edition: 3
