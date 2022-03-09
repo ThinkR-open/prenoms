@@ -93,7 +93,7 @@ load("data/prenoms_france.rda")
      aes(x = year, y = n, color = name) + 
      geom_line() + 
      scale_x_continuous( breaks = seq(1900, 2020, by = 10) ) +
-     labs(title = "ThinkR's team names evolution in the 93 department") +
+     labs(title = "ThinkR's team names evolution in France") +
      theme_bw()
 ```
 
