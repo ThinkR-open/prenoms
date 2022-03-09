@@ -3,11 +3,11 @@
 \docType{data}
 \name{prenoms_france}
 \alias{prenoms_france}
-\title{French Baby Names 1900-2019}
+\title{French Baby Names 1900-2020}
 \format{
 data frame with columns
 \itemize{
-  \item{\code{year}: integer, between 1900 and 2019}
+  \item{\code{year}: integer, between 1900 and 2020}
   \item{\code{sex}: character, either M or F}
   \item{\code{name}: character, first name}
   \item{\code{n}: integer, birth count within the department}
@@ -21,7 +21,7 @@ INSEE \url{https://www.insee.fr/fr/statistiques/2540004}
 prenoms_france
 }
 \description{
-French baby names between 1900 and 2019, at national level
+French baby names between 1900 and 2020, at national level
 }
 \details{
 Data has been modified to take into account changes in France departments, see
@@ -36,7 +36,7 @@ Data has been modified to take into account changes in France departments, see
   thinkrs <- prenoms_france \%>\%
     filter(
         name == "Diane"   & sex == "F" |
-        name == "SÃ©bastien"  & sex == "M" |
+        name == "Sébastien"  & sex == "M" |
         name == "Colin"  & sex == "M" |
         name == "Cervan"  & sex == "M" |
         name == "Vincent" & sex == "M"
