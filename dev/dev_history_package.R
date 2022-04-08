@@ -1,7 +1,15 @@
 
 ### Daily Dev ------------------------------------------------------------------
 
-attachment::att_amend_desc()
+attachment::att_amend_desc(
+  extra.suggests = c(
+    # Used in README example
+    "dplyr",
+    "purrr",
+    "ggplot2",
+    "tidyr"
+  )
+)
 
 devtools::check()
 rcmdcheck::rcmdcheck()
