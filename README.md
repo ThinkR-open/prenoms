@@ -51,9 +51,11 @@ through time:
 -   [Cervan](https://github.com/Cervangirard)
 -   [Vincent](https://github.com/VincentGuyader)
 -   [Margot](https://github.com/MargotBr)
+-   Estelle
 -   [Arthur](https://github.com/ArthurData)
 -   [Antoine](https://github.com/ALanguillaume)
 -   [Florence](https://github.com/FlorenceMounier)
+-   [Murielle](https://github.com/MurielleDelmotte)
 
 Let’s define a dataset holding our names and genders:
 
@@ -65,10 +67,12 @@ team_members <- tribble(
   "Sébastien", "M", 
   "Cervan",    "M", 
   "Vincent",   "M", 
-  "Margot",    "F", 
+  "Margot",    "F",
+  "Estelle",  " F",
   "Arthur",    "M", 
   "Antoine",   "M", 
-  "Florence",  "F" 
+  "Florence",  "F",
+  "Murielle",  "F"
 )
 ```
 
