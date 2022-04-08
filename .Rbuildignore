@@ -3,6 +3,6 @@
 data-raw
 thinkr.png
 README.md
-
+^dev$
 ^README\.Rmd$
 ^\.github$
