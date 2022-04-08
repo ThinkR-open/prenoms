@@ -3,11 +3,25 @@ Package: prenoms
 Title: French Baby Names 1900-2020
 Version: 0.4.0
 Authors@R: c(
+    person(
+      given = "Antoine", 
+      family = "Languillaume", 
+      role = "aut", 
+      email = "antoine@thinkr.fr", 
+      comment = c(ORCID = "0000-0001-9843-5632")
+    ),
     person("Romain", "Francois", , "romain@purrple.cat", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2444-4226")),
     person("Florian", "Gaudin-Delrieu", , "florian.gaudindelrieu@gmail.com", role = "aut"),
     person("Vincent", "Guyader", , "vincent@thinkr.fr", role = "aut",
            comment = c(ORCID = "0000-0003-0671-9270")),
+    person(
+      given = "Florence", 
+      family = "Mounier", 
+      role = "aut", 
+      email = "florence@thinkr.fr", 
+      comment = c(ORCID = "0000-0001-8916-7007")
+    ),
     person("ThinkR", role = "cph")
   )
 Description: French Baby Names 1900-2020.
