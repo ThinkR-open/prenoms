@@ -1,13 +1,17 @@
 
--   [About](#about)
--   [Installation](#installation)
--   [Usage](#usage)
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/prenoms)](https://cran.r-project.org/package=prenoms)
+[![Codecov test
+coverage](https://codecov.io/gh/ThinkR-open/prenoms/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ThinkR-open/prenoms?branch=master)
 <!-- badges: end -->
+
+# {prenoms} <img src="https://raw.githubusercontent.com/ThinkR-open/thinkr-hex-stickers/master/hexes/thinkr-hex-prenoms.png" align="right" width="120"/>
 
 # About
 
@@ -25,25 +29,33 @@ These data are available at the French level and by department.
 
 # Installation
 
-You can install the development version of {prenoms} from GitHub:
+## CRAN version
 
 ``` r
+install.packages("prenoms")
+```
+
+## Development version from GitHub
+
+``` r
+# install.packages("devtools")
 devtools::install_github( "ThinkR-open/prenoms" )
 library("prenoms")
 ```
 
-# Usage
+# Use package {prenoms}
+
+Load package and its data:
 
 ``` r
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-library(purrr)
 library(prenoms)
+data("prenoms_france")
+data("prenoms")
+data("departements")
 ```
 
-For example, names from current [ThinkR](https://thinkr.fr) staff
-through time:
+Example of study with names from current [ThinkR](https://thinkr.fr)
+staff through time:
 
 -   [Colin](https://github.com/colinfay)
 -   [Diane](https://github.com/DianeBeldame)
@@ -56,6 +68,13 @@ through time:
 -   [Antoine](https://github.com/ALanguillaume)
 -   [Florence](https://github.com/FlorenceMounier)
 -   [Murielle](https://github.com/MurielleDelmotte)
+
+``` r
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(purrr)
+```
 
 Let’s define a dataset holding our names and genders:
 
@@ -145,7 +164,7 @@ thinkrs %>%
   theme_bw()
 ```
 
-<img src="man/figures/README-graph-france-1.png" width="100%" />
+<img src="man/figures/README-graph-france-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### In the “départment” of ThinkR’s headquarters: 93 (Seine-Saint-Denis)
 
@@ -170,4 +189,10 @@ thinkrs_93 %>%
   theme_bw()
 ```
 
-<img src="man/figures/README-graph-departement-1.png" width="100%" />
+<img src="man/figures/README-graph-departement-1.png" width="100%" style="display: block; margin: auto;" />
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of
+Conduct](https://www.contributor-covenant.org/version/1/0/0/code-of-conduct.html).
+By participating in this project you agree to abide by its terms.
