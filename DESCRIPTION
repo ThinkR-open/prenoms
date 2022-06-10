@@ -29,7 +29,6 @@ License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
 Suggests: 
-    covr,
     dplyr,
     ggplot2,
     purrr,

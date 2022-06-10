@@ -23,9 +23,6 @@ usethis::use_github_action_check_standard(
   save_as = "check-standard.yaml"
 )
 
-# _coverage
-usethis::use_coverage()
-usethis::use_github_action("test-coverage")
 
 ### Documentation --------------------------------------------------------------
 

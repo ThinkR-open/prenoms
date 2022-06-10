@@ -7,8 +7,6 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 [![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/prenoms)](https://cran.r-project.org/package=prenoms)
-[![Codecov test
-coverage](https://codecov.io/gh/ThinkR-open/prenoms/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ThinkR-open/prenoms?branch=master)
 <!-- badges: end -->
 
 # {prenoms} <img src="https://raw.githubusercontent.com/ThinkR-open/thinkr-hex-stickers/master/hexes/thinkr-hex-prenoms.png" align="right" width="120"/>
