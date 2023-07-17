@@ -3,11 +3,11 @@
 \docType{data}
 \name{prenoms_france}
 \alias{prenoms_france}
-\title{French Baby Names 1900-2020}
+\title{French Baby Names 1900-2021}
 \format{
 data frame with columns
 \itemize{
-  \item{\code{year}: integer, between 1900 and 2020}
+  \item{\code{year}: integer, between 1900 and 2021}
   \item{\code{sex}: character, either M or F}
   \item{\code{name}: character, first name}
   \item{\code{n}: integer, birth count within the department}
@@ -21,7 +21,7 @@ INSEE \url{https://www.insee.fr/fr/statistiques/2540004}
 prenoms_france
 }
 \description{
-French baby names between 1900 and 2020, at national level
+French baby names between 1900 and 2021, at national level
 }
 \details{
 Data has been modified to take into account changes in France departments, see
@@ -48,7 +48,7 @@ Data has been modified to take into account changes in France departments, see
   # quick ggplot representation
   ggplot( thinkrs, aes(x = year, y = n, color = name) ) +
     geom_line() +
-    scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
+    scale_x_continuous( breaks = seq(1900, 2021, by = 10) )
 }
 
 }

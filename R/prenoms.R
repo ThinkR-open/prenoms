@@ -1,10 +1,10 @@
-#' French Baby Names 1900-2020
+#' French Baby Names 1900-2021
 #'
-#' French baby names between 1900 and 2020, detailed by department
+#' French baby names between 1900 and 2021, detailed by department
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2020}
+#'   \item{\code{year}: integer, between 1900 and 2021}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}
@@ -39,7 +39,7 @@
 #'   # quick ggplot representation
 #'   ggplot( thinkrs, aes(x = year, y = n, color = name) ) +
 #'     geom_line() +
-#'     scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
+#'     scale_x_continuous( breaks = seq(1900, 2021, by = 10) )
 #' }
 #'
 "prenoms"
@@ -50,13 +50,13 @@
 "departements"
 
 
-#' French Baby Names 1900-2020
+#' French Baby Names 1900-2021
 #'
-#' French baby names between 1900 and 2020, at national level
+#' French baby names between 1900 and 2021, at national level
 #'
 #' @format data frame with columns
 #' \itemize{
-#'   \item{\code{year}: integer, between 1900 and 2020}
+#'   \item{\code{year}: integer, between 1900 and 2021}
 #'   \item{\code{sex}: character, either M or F}
 #'   \item{\code{name}: character, first name}
 #'   \item{\code{n}: integer, birth count within the department}
@@ -90,7 +90,7 @@
 #'   # quick ggplot representation
 #'   ggplot( thinkrs, aes(x = year, y = n, color = name) ) +
 #'     geom_line() +
-#'     scale_x_continuous( breaks = seq(1900, 2020, by = 10) )
+#'     scale_x_continuous( breaks = seq(1900, 2021, by = 10) )
 #' }
 #'
 "prenoms_france"
