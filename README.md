@@ -5,8 +5,6 @@
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/prenoms)](https://cran.r-project.org/package=prenoms)
 <!-- badges: end -->
 
 # {prenoms} <img src="https://raw.githubusercontent.com/ThinkR-open/thinkr-hex-stickers/master/hexes/thinkr-hex-prenoms.png" align="right" width="120"/>
@@ -15,7 +13,7 @@ status](https://www.r-pkg.org/badges/version/prenoms)](https://cran.r-project.or
 
 `{prenoms}` (namely “firstnames”) allows you to explore the data on
 first names given to children born in metropolitan France between 1900
-and 2020.
+and 2021.
 
 These data are available at the French level and by department.
 
@@ -26,14 +24,6 @@ These data are available at the French level and by department.
 > [here](https://www.insee.fr/fr/statistiques/2540004#documentation).
 
 # Installation
-
-## CRAN version
-
-``` r
-install.packages("prenoms")
-```
-
-## Development version from GitHub
 
 ``` r
 # install.packages("devtools")
@@ -55,17 +45,19 @@ data("departements")
 Example of study with names from current [ThinkR](https://thinkr.fr)
 staff through time:
 
--   [Colin](https://github.com/colinfay)
--   [Diane](https://github.com/DianeBeldame)
--   [Sébastien](https://github.com/statnmap)
--   [Cervan](https://github.com/Cervangirard)
--   [Vincent](https://github.com/VincentGuyader)
--   [Margot](https://github.com/MargotBr)
--   Estelle
--   [Arthur](https://github.com/ArthurData)
--   [Antoine](https://github.com/ALanguillaume)
--   [Florence](https://github.com/FlorenceMounier)
--   [Murielle](https://github.com/MurielleDelmotte)
+- [Colin](https://github.com/colinfay)
+- [Diane](https://github.com/DianeBeldame)
+- [Sébastien](https://github.com/statnmap)
+- [Cervan](https://github.com/Cervangirard)
+- [Vincent](https://github.com/VincentGuyader)
+- [Margot](https://github.com/MargotBr)
+- Estelle
+- [Arthur](https://github.com/ArthurData)
+- [Antoine](https://github.com/ALanguillaume)
+- [Florence](https://github.com/FlorenceMounier)
+- [Murielle](https://github.com/MurielleDelmotte)
+- [Swann](https://github.com/dagousket)
+- [Yohann](https://github.com/ymansiaux)
 
 ``` r
 library(ggplot2)
@@ -85,11 +77,13 @@ team_members <- tribble(
   "Cervan",    "M", 
   "Vincent",   "M", 
   "Margot",    "F",
-  "Estelle",  " F",
+  "Estelle",  "F",
   "Arthur",    "M", 
   "Antoine",   "M", 
   "Florence",  "F",
-  "Murielle",  "F"
+  "Murielle",  "F",
+  "Swann",     "F",
+  "Yohann",    "M"
 )
 ```
 
@@ -110,7 +104,7 @@ get_thinkr_team_name_data <- function(
     # Add missing combination for name x year 
     complete(
       name = team_members$name,
-      year = 1900:2020,
+      year = 1900:2021,
       fill = list( n = 0, prop = 0 )
     ) %>% 
     group_by(name, year, sex) %>%
@@ -157,7 +151,7 @@ thinkrs %>%
   ggplot() +
   aes(x = year, y = n, color = name) +
   geom_line() +
-  scale_x_continuous( breaks = seq(1900, 2020, by = 10) ) +
+  scale_x_continuous( breaks = seq(1900, 2021, by = 10) ) +
   labs(title = "ThinkR's team names evolution in France") +
   theme_bw()
 ```
@@ -182,7 +176,7 @@ thinkrs_93 %>%
   ggplot() +
   aes(x = year, y = n, color = name) +
   geom_line() +
-  scale_x_continuous( breaks = seq(1900, 2020, by = 10) ) +
+  scale_x_continuous( breaks = seq(1900, 2021, by = 10) ) +
   labs(title = "ThinkR's team names evolution in the 93 department") +
   theme_bw()
 ```

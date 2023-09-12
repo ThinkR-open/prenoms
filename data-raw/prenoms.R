@@ -57,7 +57,7 @@ rewrite_history_corse <- function(data){
 
 
 
-prenoms <- read_csv2(file.path( "data-raw", "dpt2020.csv" ),
+prenoms <- read_csv2(file.path( "data-raw", "dpt2021.csv" ),
                      na = c("XX", "XXXX"),
                      col_types = "icicd",
                      progress = TRUE
