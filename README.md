@@ -5,8 +5,6 @@
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![R-CMD-check](https://github.com/ThinkR-open/prenoms/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/prenoms/actions)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/prenoms)](https://cran.r-project.org/package=prenoms)
 <!-- badges: end -->
 
 # {prenoms} <img src="https://raw.githubusercontent.com/ThinkR-open/thinkr-hex-stickers/master/hexes/thinkr-hex-prenoms.png" align="right" width="120"/>
@@ -26,8 +24,6 @@ These data are available at the French level and by department.
 > [here](https://www.insee.fr/fr/statistiques/2540004#documentation).
 
 # Installation
-
-## Development version from GitHub
 
 ``` r
 # install.packages("devtools")
